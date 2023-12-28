@@ -52,18 +52,30 @@
         button:hover {
             background-color: #0056b3;
         }
+        .btns{
+            display: flex;
+            justify-content: center;
+        }
+        .head{
+            font-size: 1.875rem;
+            margin: 30px;
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
+    <div class="head">Rock Paper Scissors</div>
     <div id="score">
         <p>User Score: <span id="score-user">0</span></p>
         <p>Computer Score: <span id="score-computer">0</span></p>
     </div>
     <div id="result"></div>
-    
-    <button class="btn" id="rock">Rock</button>
+    <div class="btns">
+        <button class="btn" id="rock">Rock</button>
     <button class="btn" id="paper">Paper</button>
     <button class="btn" id="scissor">Scissors</button>
+    </div>
+    
 
     <button id="resetButton">Reset</button>
 
